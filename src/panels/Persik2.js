@@ -13,7 +13,7 @@ import Icon24Back from "@vkontakte/icons/dist/24/back";
 
 const osName = platform();
 
-const Persik = props => (
+const Persik2 = props => (
   <Panel id={props.id}>
     <PanelHeader
       left={
@@ -22,7 +22,7 @@ const Persik = props => (
         </HeaderButton>
       }
     >
-      Числитель
+      Знаменатель
     </PanelHeader>
 
     <Group title="Понедельник">
@@ -32,8 +32,8 @@ const Persik = props => (
           Надежность ИС (Практика)
         </Div>
         <Div>
-          <InfoRow title="14:30 - 16:00 • Аудитория 0003"></InfoRow>
-          Методы и средства проектирования ИСиТ (Практика)
+          <InfoRow title="14:30 - 16:00 • Аудитория 0007"></InfoRow>
+          Надежность ИС (Лекция)
         </Div>
         <Div>
           <InfoRow title="16:10 - 17:40 • Аудитория 0003"></InfoRow>
@@ -54,7 +54,7 @@ const Persik = props => (
           обеспечения (Лекция)
         </Div>
         <Div>
-          <InfoRow title="12:40 - 14:15 • Аудитория 3026"></InfoRow>
+          <InfoRow title="12:40 - 14:15 • Аудитория 2004"></InfoRow>
           Управление большими данными (Лекция)
         </Div>
       </List>
@@ -63,7 +63,7 @@ const Persik = props => (
       <List>
         <Div>
           <InfoRow title="09:00 - 10:35 • Аудитория 2018"></InfoRow>
-          Автоматизированные системы управления производством (Лекция)
+          Автоматизированные системы управления производством (Практика)
         </Div>
         <Div>
           <InfoRow title="10:50 - 12:25 • Аудитория 2018"></InfoRow>
@@ -87,24 +87,12 @@ const Persik = props => (
         </Div>
       </List>
     </Group>
-    <Group title="Пятница">
-      <List>
-        <Div>
-          <InfoRow title="14:30 - 16:00 • Аудитория 2025"></InfoRow>
-          Управление большими данными (Практика)
-        </Div>
-        <Div>
-          <InfoRow title="16:10 - 17:40 • Аудитория 2025"></InfoRow>
-          Управление большими данными (Практика)
-        </Div>
-      </List>
-    </Group>
   </Panel>
 );
 
-Persik.propTypes = {
+Persik2.propTypes = {
   id: PropTypes.string.isRequired,
   go: PropTypes.func.isRequired
 };
 
-export default Persik;
+export default Persik2;
